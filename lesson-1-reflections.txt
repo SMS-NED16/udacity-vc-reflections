@@ -1,0 +1,88 @@
+REFLECTION 1
+How did viewing a diff between two versions of a file help you see the bug that
+was introduced?
+
+The diff -u (old_file_name) (new_file_name) command showed exactly which parts
+of the two files differed from one another. This meant I had significantly fewer
+lines of code to search through for the error. It would have been a lot more 
+tedious/time consuming to go through the entire code of both files, and chances
+are I would not have been able to zero in on the error as quickly or at all if 
+I did not use diff. 
+
+The +/- annotations are also useful, because they show which additions have 
+been made in the new file and which deletions have been made from the old file.
+This makes it easier to understand how the code in the second file differs from
+that in the first file.
+
+
+REFLECTION 2
+How could having easy access to the entire history of a file make you a more
+efficient programmer in the long term?
+
+Programming involves making incremental changes to code in order to either add
+new functionality or improve/modify existing features. Sometimes, this modification
+tends to introduce bugs or errors in a programme. Without version control, it is 
+very difficult to keep track of changes being made to a programme. This means that
+it is also difficult to keep track of the last working version of a programme and, by
+extension, to analyse which change introduced the error in the programme.
+
+As such, using version control makes me more efficient in the following ways:
+1. I can keep track of all changes being made to the programme, as well as the 
+effect these changes have on the overall functionality of the programme.
+
+2. This means I can easily find out which modification may have broken my programme
+and fix it by rectifying the error or reverting to previous version.
+
+3. Because I always have the ability to revert to a previous version of the progamme,
+this means I can take more ‘risks’ when it comes to modifying my programme and can make quick changes without being too careful not to be permanently break the programme.
+
+
+REFLECTION 3
+What do you think are the pros and cons of manually choosing when to create a
+commit, like you do in Git, vs having versions automatically saved, like Google
+docs does?
+
+Pros:
+1. Allows us to make one commit per logical change. This logical change can occur 
+after any duration of time - it varies from programme to programme. By letting us
+decide when to make commits, Git helps make sure our version history is useful.
+2. In a way, this facilitates modular or top-down design: if we try and stick to 
+making one logical change per commit, then we will break down our programme into smaller and smaller parts. This makes it easier to write complex programmes.
+
+Cons:
+1. Users can forget to make commits. If changes were being saved at regular intervals, this wouldn’t necessarily be a problem because data wouldn’t be lost. 
+2. Commits are made automatically at regular intervals so a consistent log of 
+commits is available.  
+
+
+REFLECTION 4
+Why do you think some version control systems, like Git, allow saving multiple
+files in one commit, while others, like Google Docs, treat each file separately?
+Different version control systems are designed with different uses in mind. For instance, Google Docs is designed for quick and easy editing of standalone documents.
+As such, Google Docs’ version control focuses on tracking changes to individual files, as word documents are often not related or grouped together.
+
+Git was designed as a version control system for programmes. Programmes tend to span
+several files, with all files being interconnected. For instance, a webpage’s HTML, CSS, and Javascript files are all interconnected. Similarly, a Java programme may consist of several related classes. Changes being made to one file often affect other files too. Keeping track of changes across files allows programmers to pinpoint which
+file which changed and the effect this had on the programme as a whole. 
+
+
+REFLECTION 5
+How can you use the commands git log and git diff to view the history of files?
+git log is used to view a complete history of all commits made for a particular repository or file. Each commit has an id, a timestamp/date, an author, and a message, which helps identify who made which changes to a programme and when. 
+
+git diff can then be used to compare differences between different versions of the same files using git IDs of different commits. This shows which lines were added or deleted between the two commits, and gives a more detailed picture of how the file has changed between commits.
+
+How might using version control make you more confident to make changes that
+could break something?
+
+Using git checkout command, it is possible to revert to earlier versions of a programme. Even if me make a potentially programme-breaking error, we can always use checkout to revert to the last known working version of a programme as long as we remember its git ID. 
+
+Also, detached HEAD state means we can make modifications to a programme on a completely new branch of commits without affecting the history/log of the other branch of commits.
+
+So we can make bigger, more significant changes to our programme instead of merely incremental ones. 
+
+REFLECTION 6
+Now that you have your workspace set up, what do you want to try using Git for?
+
+Need to upload all my projects to GitHub so I will have something to showcase my skills. Using GitHub requires Git commands. 
+Also, will be working on bigger projects like websites, apps, games etc. so need to be able to track development in form of changes.
