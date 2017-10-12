@@ -1,0 +1,36 @@
+REFLECTION 1:
+What happens when you initialize a repository? Why do you need to do it?
+
+Initialising a git repository using the git init commands creates a hidden folder called .git which stores version control metadata for the repository, such as its commit history. This is important because it effectively changes a directory into a repository. Directories and repositories both have files or data, but only a repository has data about the commit history for all files. git init therefore makes it possible for versions of all files in the directory to be tracked, recorded, stored, and made accessible. git init also allows us to track all files in the directory together, but not with files in other directories. So in a way git init tells the computer which files are to be tracked
+
+
+REFLECTION 2:
+How is the staging area different from the working directory and the repository?
+What value do you think it offers?
+
+The staging area is an intermediary or holding area to which files can be added before being pushed as a commit. This allows us to select the files we wish to include in a commit one by one, and then commit these files together if needed. It also provides a greater degree of control over which files are to be pushed as a commit by allowing us to return files to the working directory from the staging area if need be. This makes it easier for us to stick to the ‘one logical change per commit’ idea.
+
+
+
+REFLECTION 3:
+How can you use the staging area to make sure you have one commit per logical
+change?
+
+
+REFLECTION 4:
+What are some situations when branches would be helpful in keeping your history
+organized? How would branches help?
+
+
+REFLECTION 5:
+How do the diagrams help you visualize the branch structure?
+
+
+REFLECTION 6:
+What is the result of merging two branches together? Why do we represent it in
+the diagram the way we do?
+
+
+REFLECTION 7:
+What are the pros and cons of Git's automatic merging vs. always doing merges
+manually?
