@@ -12,6 +12,11 @@ local?
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
+If Git were to sync my repositories automatically, it may make changes to my
+local or remote repos that would undo changes I may have made since the last
+sync. It is safer to manually pull changes instead because I will only 
+pull changes when I am certain they will not affect the rest of the programme
+in an undesirable way.
 
 
 Describe the differences between forks, clones, and branches.  When would you
