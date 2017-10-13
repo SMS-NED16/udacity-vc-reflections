@@ -17,20 +17,38 @@ How can you use the staging area to make sure you have one commit per logical
 change?
 
 
+Any files which are to be added to a commit are first placed in the staging area. If, after placing these files in the staging area, the user realises that both modified files represent one logical change then both files can be committed. For instance, if I had a C++ header file and C++ implementation file for a class, then adding a function declaration in the header file and adding the function definition in the implementation file represent one logical change. 
+However, if the two files represent logically different changes, then I can remove one or more files from the staging area and commit only one file. 
+Similarly, the staging area allows me to choose which file or files I want to commit. 
+
+
 REFLECTION 4:
 What are some situations when branches would be helpful in keeping your history
 organized? How would branches help?
+
+If several people are working on different parts of the same programme, they can make commits to different branches. So all commits for feature A are made to branch A, all commits for feature B are made to branch B, and so on and so forth. This makes the commit history a lot more organized, as a programmer knows exactly which branch to look at to find a commit related to a specific feature.
 
 
 REFLECTION 5:
 How do the diagrams help you visualize the branch structure?
 
+Diagrams show which commits are reachable for through which branches i.e. what the parent of each commit is. They also help us identify which commits or changes belong to a particular branch and, by extension, are related to a specific feature. 
+
 
 REFLECTION 6:
 What is the result of merging two branches together? Why do we represent it in
 the diagram the way we do?
-
+1. All changes made in the programme in one branch are incorporated into the programme’s version in the master branch.
+2. This results in a combined commit which will have all changes from both branches.
+3. In our diagram, this is represented as a single commit but with two parent commits instead of the usual single parent commit. This is because the commit resulting from branches merging will have to incorporate changes from two different versions or states of the same programme. This means it must hold data for both states and hence both parents.
 
 REFLECTION 7:
 What are the pros and cons of Git's automatic merging vs. always doing merges
 manually?
+
+Pros
+1. Can be tedious to merge many different branches manually, especially these branches are being worked on by different people. 
+
+Cons
+1. Resolving conflicts is hard. Really hard.
+2. Will sometimes merge in a way that will break the code. 
