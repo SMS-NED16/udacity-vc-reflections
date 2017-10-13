@@ -22,6 +22,20 @@ in an undesirable way.
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
+To fork a repository on GitHub is to copy a repository from one GitHub account
+to another. The entire process is done on GitHub’s servers. Forking is important
+as it allows users to clone copies of online repositories onto their own devices
+for offline modification while still allowing the original creator of the repository
+to claim credit for any work that has been done on the repository so far. In this way, a copy of the original repository can be modified even if a user cannot access or modify the original repo directly.
+
+To clone a repository is to copy the contents of either a remote or a local repository to a local repository on a device. The process usually refers to 
+‘downloading’ a copy of an online repository to a device for offline use, but could also mean copying a repository from one location on a device to another
+
+Branches are a feature of Git that allow users to make significant 
+modifications to a project without losing the commit data for earlier versions.
+While cloning or forking a repository deals are operations performed ON repositories, branching is done WITHIN repositories.c
+
+
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
