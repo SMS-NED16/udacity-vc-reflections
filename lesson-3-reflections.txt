@@ -57,3 +57,15 @@ Would have no syntax highlighting. Would not work for multiple linked files or f
 
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
+
+a.	Use branches if working on experimental features that may or may not become a part of the final version of the programme. 
+
+b.	Also use branches as a way of dividing a project into different features which are worked on by different people. This compartmentalisation of each feature helps prevent programmers from accidentally changing code for other parts of the programme. 
+
+c.	Branches also allow for the use of pull requests - this makes sure that a piece of code can be reviewed before it is incorporated into the final version of the programme.
+
+d.	Having separate branches for separate features also means that if I know exactly where to look/exactly which logs to check if I’m trying to troubleshoot an issue in a specific feature.
+
+e.	That being said, branches are complicated. You need to manually resolve merge conflicts, which can be a bit of a hassle. The process becomes even more involved when done via GitHub, because branches have to be manipulated on the local repo before they can be pushed to the remote. 
+
+Working on the master branch is useful if I’m the only one working on the programme.
