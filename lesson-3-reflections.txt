@@ -1,15 +1,19 @@
+REFLECTION 1:
 When would you want to use a remote repository rather than keeping all your work
 local?
-1. So I can access the repository from a different device if needed.
-2. To save a copy of my work in the cloud as a backup in case my local repo's
+
+a. So I can access the repository from a different device if needed.
+b. To save a copy of my work in the cloud as a backup in case my local repo's
    data is lost
-3. To allow others to access my repository/make changes to the contents of my
+c. To allow others to access my repository/make changes to the contents of my
    repository or project if I am working on a project in collaboration with 
    others. 
-4. To have an online record of all projects I've worked on as a very
+d. To have an online record of all projects I've worked on as a very
    rudimentary portfolio of sorts.
 
 
+
+REFLECTION 2
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
 
@@ -20,6 +24,8 @@ pull changes when I am certain they will not affect the rest of the programme
 in an undesirable way.
 
 
+
+REFLECTION 3:
 Describe the differences between forks, clones, and branches.  When would you
 use one instead of another?
 
@@ -38,12 +44,15 @@ While cloning or forking a repository deals are operations performed ON reposito
 
 
 
+REFLECTION 4:
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
 
 Having a branch in your local repo with the last known state of the remote repo can be useful if you will be offline for some time. This is because you can continue to work on your local repo, merge it with the offline copy of the remote repo, and then push the finished programme to the remote repo when you have internet access. This basically prevents allows you to work on the data in a remote repository even if you don’t have internet access, which can be useful.
 
 
+
+REFLECTION 5:
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
@@ -55,6 +64,7 @@ Could easily designate one person as a moderator for the programme - only this p
 Would have no syntax highlighting. Would not work for multiple linked files or folders. Others would have to manually copy and paste the code into a text editor instead of using the command line to download the entire repository. Would have to manually merge changes, with no warnings about possible merge conflicts. This could lead to bugs if the moderator was not careful. Google Docs also doesn’t have syntax highlighting or code formatting facilities, which would have made code more difficult to read.
 
 
+REFLECTION 6:
 When would you want to make changes in a separate branch rather than directly in
 master?  What benefits does each approach have?
 
