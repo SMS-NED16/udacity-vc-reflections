@@ -12,6 +12,7 @@ local?
 
 Why might you want to always pull changes manually rather than having Git
 automatically stay up-to-date with your remote repository?
+
 If Git were to sync my repositories automatically, it may make changes to my
 local or remote repos that would undo changes I may have made since the last
 sync. It is safer to manually pull changes instead because I will only 
@@ -33,12 +34,16 @@ To clone a repository is to copy the contents of either a remote or a local repo
 
 Branches are a feature of Git that allow users to make significant 
 modifications to a project without losing the commit data for earlier versions.
-While cloning or forking a repository deals are operations performed ON repositories, branching is done WITHIN repositories.c
+While cloning or forking a repository deals are operations performed ON repositories, branching is done WITHIN repositories.
 
 
 
 What is the benefit of having a copy of the last known state of the remote
 stored locally?
+
+Having a branch in your local repo with the last known state of the remote repo can be useful if you will be offline for some time. This is because you can continue to work on your local repo, merge it with the offline copy of the remote repo, and then push the finished programme to the remote repo when you have internet access. This basically prevents allows you to work on the data in a remote repository even if you don’t have internet access, which can be useful.
+
+
 
 
 How would you collaborate without using Git or GitHub?  What would be easier,
