@@ -44,11 +44,15 @@ stored locally?
 Having a branch in your local repo with the last known state of the remote repo can be useful if you will be offline for some time. This is because you can continue to work on your local repo, merge it with the offline copy of the remote repo, and then push the finished programme to the remote repo when you have internet access. This basically prevents allows you to work on the data in a remote repository even if you don’t have internet access, which can be useful.
 
 
-
-
 How would you collaborate without using Git or GitHub?  What would be easier,
 and what would be harder?
 
+Would probably use a different version control system that allows cloud access to
+multiple authors - something like Google Drive and Docs. 
+
+Could easily designate one person as a moderator for the programme - only this person would be able to edit the file or repository. Others would only be able to make suggestions through comments on files. This would effectively be a simpler version of the pull request feature. Could easily revert to earlier versions of the code using version history option. Would have the added advantage of being a private repository, to keep the project under wraps until it was ready to be published. Greater degree of control over who sees the project and who doesn’t.
+
+Would have no syntax highlighting. Would not work for multiple linked files or folders. Others would have to manually copy and paste the code into a text editor instead of using the command line to download the entire repository. Would have to manually merge changes, with no warnings about possible merge conflicts. This could lead to bugs if the moderator was not careful. Google Docs also doesn’t have syntax highlighting or code formatting facilities, which would have made code more difficult to read.
 
 
 When would you want to make changes in a separate branch rather than directly in
